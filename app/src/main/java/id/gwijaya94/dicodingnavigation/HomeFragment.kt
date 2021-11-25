@@ -5,7 +5,6 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.navigation.Navigation
 import androidx.navigation.findNavController
 import id.gwijaya94.dicodingnavigation.databinding.FragmentHomeBinding
 
@@ -31,6 +30,10 @@ class HomeFragment : Fragment() {
         binding.btnProfile.setOnClickListener {
             view.findNavController().navigate(R.id.action_homeFragment_to_profileActivity)
         }
+        binding.btnToOptAppbar.setOnClickListener {
+            view.findNavController().navigate(R.id.action_homeFragment_to_optionAppBarActivity)
+        }
+
     }
 
     override fun onDestroy() {

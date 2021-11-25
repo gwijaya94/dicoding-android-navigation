@@ -23,6 +23,9 @@
             app:enterAnim="@anim/slide_in_right"
             app:exitAnim="@anim/slide_out_left"
             app:launchSingleTop="true" />
+        <action
+            android:id="@+id/action_homeFragment_to_optionAppBarActivity"
+            app:destination="@id/optionAppBarActivity" />
     </fragment>
     <fragment
         android:id="@+id/categoryFragment"
@@ -65,4 +68,9 @@
             app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="true" />
     </fragment>
+    <activity
+        android:id="@+id/optionAppBarActivity"
+        android:name="id.gwijaya94.dicodingnavigation.OptionAppBarActivity"
+        android:label="activity_option_app_bar"
+        tools:layout="@layout/activity_option_app_bar" />
 </navigation>
