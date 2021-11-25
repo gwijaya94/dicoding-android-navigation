@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
+import androidx.navigation.Navigation
 import id.gwijaya94.dicodingnavigation.databinding.FragmentDetailCategoryBinding
 
 
@@ -29,9 +30,16 @@ class DetailCategoryFragment : Fragment() {
         val dataName = argBundle.name
         val dataDescription = argBundle.stock
 
+        val toHomeFragmentDirections =
+            DetailCategoryFragmentDirections.actionDetailCategoryFragmentToHomeFragment()
         binding.apply {
             tvCategoryName.text = dataName
             tvCategoryDescription.text = "Stock: $dataDescription"
+            btnProfile.setOnClickListener(
+                Navigation.createNavigateOnClickListener(
+                    toHomeFragmentDirections
+                )
+            )
         }
     }
 
