@@ -73,4 +73,14 @@
         android:name="id.gwijaya94.dicodingnavigation.OptionAppBarActivity"
         android:label="activity_option_app_bar"
         tools:layout="@layout/activity_option_app_bar" />
+    <fragment
+        android:id="@+id/menuFragment"
+        android:name="id.gwijaya94.dicodingnavigation.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" />
+    <activity
+        android:id="@+id/menuActivity"
+        android:name="id.gwijaya94.dicodingnavigation.MenuActivity"
+        android:label="activity_menu"
+        tools:layout="@layout/activity_menu" />
 </navigation>
